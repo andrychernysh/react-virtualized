@@ -135,7 +135,8 @@
   "dependencies": {
     "classnames": "^2.2.3",
     "dom-helpers": "^2.4.0",
-    "raf": "^3.1.0"
+    "raf": "^3.1.0",
+    "prop-types": "^15.5.9"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0",

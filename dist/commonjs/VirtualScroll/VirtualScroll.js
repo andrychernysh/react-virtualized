@@ -12,6 +12,8 @@ var _Grid2 = _interopRequireDefault(_Grid);
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _classnames = require('classnames');
@@ -128,56 +130,56 @@ var VirtualScroll = function (_Component) {
 }(_react.Component);
 
 VirtualScroll.propTypes = {
-  'aria-label': _react.PropTypes.string,
+  'aria-label': PropTypes.string,
 
   /** Optional CSS class name */
-  className: _react.PropTypes.string,
+  className: PropTypes.string,
 
   /** Height constraint for list (determines how many actual rows are rendered) */
-  height: _react.PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 
   /** Optional renderer to be used in place of rows when rowsCount is 0 */
-  noRowsRenderer: _react.PropTypes.func.isRequired,
+  noRowsRenderer: PropTypes.func.isRequired,
 
   /**
    * Callback invoked with information about the slice of rows that were just rendered.
    * ({ startIndex, stopIndex }): void
    */
-  onRowsRendered: _react.PropTypes.func.isRequired,
+  onRowsRendered: PropTypes.func.isRequired,
 
   /**
    * Number of rows to render above/below the visible bounds of the list.
    * These rows can help for smoother scrolling on touch devices.
    */
-  overscanRowsCount: _react.PropTypes.number.isRequired,
+  overscanRowsCount: PropTypes.number.isRequired,
 
   /**
    * Callback invoked whenever the scroll offset changes within the inner scrollable region.
    * This callback can be used to sync scrolling between lists, tables, or grids.
    * ({ clientHeight, scrollHeight, scrollTop }): void
    */
-  onScroll: _react.PropTypes.func.isRequired,
+  onScroll: PropTypes.func.isRequired,
 
   /**
    * Either a fixed row height (number) or a function that returns the height of a row given its index.
    * (index: number): number
    */
-  rowHeight: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.func]).isRequired,
+  rowHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.func]).isRequired,
 
   /** Responsbile for rendering a row given an index */
-  rowRenderer: _react.PropTypes.func.isRequired,
+  rowRenderer: PropTypes.func.isRequired,
 
   /** Number of rows in list. */
-  rowsCount: _react.PropTypes.number.isRequired,
+  rowsCount: PropTypes.number.isRequired,
 
   /** Row index to ensure visible (by forcefully scrolling if necessary) */
-  scrollToIndex: _react.PropTypes.number,
+  scrollToIndex: PropTypes.number,
 
   /** Vertical offset. */
-  scrollTop: _react.PropTypes.number,
+  scrollTop: PropTypes.number,
 
   /** Width of list */
-  width: _react.PropTypes.number.isRequired
+  width: PropTypes.number.isRequired
 };
 VirtualScroll.defaultProps = {
   noRowsRenderer: function noRowsRenderer() {

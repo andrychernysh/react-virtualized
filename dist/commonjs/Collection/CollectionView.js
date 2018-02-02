@@ -8,6 +8,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _classnames = require('classnames');
@@ -517,65 +519,65 @@ var CollectionView = function (_Component) {
 }(_react.Component);
 
 CollectionView.propTypes = {
-  'aria-label': _react.PropTypes.string,
+  'aria-label': PropTypes.string,
 
   /**
    * Number of cells in collection.
    */
-  cellCount: _react.PropTypes.number.isRequired,
+  cellCount: PropTypes.number.isRequired,
 
   /**
    * Calculates cell sizes and positions and manages rendering the appropriate cells given a specified window.
    */
-  cellLayoutManager: _react.PropTypes.object.isRequired,
+  cellLayoutManager: PropTypes.object.isRequired,
 
   /**
    * Optional custom CSS class name to attach to root Collection element.
    */
-  className: _react.PropTypes.string,
+  className: PropTypes.string,
 
   /**
    * Height of Collection; this property determines the number of visible (vs virtualized) rows.
    */
-  height: _react.PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 
   /**
    * Optional renderer to be used in place of rows when either :rowsCount or :cellCount is 0.
    */
-  noContentRenderer: _react.PropTypes.func.isRequired,
+  noContentRenderer: PropTypes.func.isRequired,
 
   /**
    * Callback invoked whenever the scroll offset changes within the inner scrollable region.
    * This callback can be used to sync scrolling between lists, tables, or grids.
    * ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
    */
-  onScroll: _react.PropTypes.func.isRequired,
+  onScroll: PropTypes.func.isRequired,
 
   /**
    * Callback invoked with information about the section of the Collection that was just rendered.
    * This callback is passed an array of the most recently rendered section indices.
    */
-  onSectionRendered: _react.PropTypes.func.isRequired,
+  onSectionRendered: PropTypes.func.isRequired,
 
   /**
    * Horizontal offset.
    */
-  scrollLeft: _react.PropTypes.number,
+  scrollLeft: PropTypes.number,
 
   /**
    * Cell index to ensure visible (by forcefully scrolling if necessary).
    */
-  scrollToCell: _react.PropTypes.number,
+  scrollToCell: PropTypes.number,
 
   /**
    * Vertical offset.
    */
-  scrollTop: _react.PropTypes.number,
+  scrollTop: PropTypes.number,
 
   /**
    * Width of Collection; this property determines the number of visible (vs virtualized) columns.
    */
-  width: _react.PropTypes.number.isRequired
+  width: PropTypes.number.isRequired
 };
 CollectionView.defaultProps = {
   'aria-label': 'grid',

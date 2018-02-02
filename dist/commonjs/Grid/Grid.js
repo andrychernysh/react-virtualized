@@ -10,6 +10,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _classnames = require('classnames');
@@ -750,64 +752,64 @@ var Grid = function (_Component) {
 }(_react.Component);
 
 Grid.propTypes = {
-  'aria-label': _react.PropTypes.string,
+  'aria-label': PropTypes.string,
 
   /**
    * Optional custom CSS class name to attach to root Grid element.
    */
-  className: _react.PropTypes.string,
+  className: PropTypes.string,
 
   /**
    * Number of columns in grid.
    */
-  columnsCount: _react.PropTypes.number.isRequired,
+  columnsCount: PropTypes.number.isRequired,
 
   /**
    * Either a fixed column width (number) or a function that returns the width of a column given its index.
    * Should implement the following interface: (index: number): number
    */
-  columnWidth: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.func]).isRequired,
+  columnWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.func]).isRequired,
 
   /**
    * Height of Grid; this property determines the number of visible (vs virtualized) rows.
    */
-  height: _react.PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 
   /**
    * Optional renderer to be used in place of rows when either :rowsCount or :columnsCount is 0.
    */
-  noContentRenderer: _react.PropTypes.func.isRequired,
+  noContentRenderer: PropTypes.func.isRequired,
 
   /**
    * Callback invoked whenever the scroll offset changes within the inner scrollable region.
    * This callback can be used to sync scrolling between lists, tables, or grids.
    * ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
    */
-  onScroll: _react.PropTypes.func.isRequired,
+  onScroll: PropTypes.func.isRequired,
 
   /**
    * Callback invoked with information about the section of the Grid that was just rendered.
    * ({ columnStartIndex, columnStopIndex, rowStartIndex, rowStopIndex }): void
    */
-  onSectionRendered: _react.PropTypes.func.isRequired,
+  onSectionRendered: PropTypes.func.isRequired,
 
   /**
    * Number of columns to render before/after the visible section of the grid.
    * These columns can help for smoother scrolling on touch devices or browsers that send scroll events infrequently.
    */
-  overscanColumnsCount: _react.PropTypes.number.isRequired,
+  overscanColumnsCount: PropTypes.number.isRequired,
 
   /**
    * Number of rows to render above/below the visible section of the grid.
    * These rows can help for smoother scrolling on touch devices or browsers that send scroll events infrequently.
    */
-  overscanRowsCount: _react.PropTypes.number.isRequired,
+  overscanRowsCount: PropTypes.number.isRequired,
 
   /**
    * Responsible for rendering a cell given an row and column index.
    * Should implement the following interface: ({ columnIndex: number, rowIndex: number }): PropTypes.node
    */
-  renderCell: _react.PropTypes.func.isRequired,
+  renderCell: PropTypes.func.isRequired,
 
   /**
    * Responsible for rendering a group of cells given their index ranges.
@@ -821,39 +823,39 @@ Grid.propTypes = {
    *   rowStopIndex: number
    * }): Array<PropTypes.node>
    */
-  renderCellRanges: _react.PropTypes.func.isRequired,
+  renderCellRanges: PropTypes.func.isRequired,
 
   /**
    * Either a fixed row height (number) or a function that returns the height of a row given its index.
    * Should implement the following interface: (index: number): number
    */
-  rowHeight: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.func]).isRequired,
+  rowHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.func]).isRequired,
 
   /**
    * Number of rows in grid.
    */
-  rowsCount: _react.PropTypes.number.isRequired,
+  rowsCount: PropTypes.number.isRequired,
 
   /** Horizontal offset. */
-  scrollLeft: _react.PropTypes.number,
+  scrollLeft: PropTypes.number,
 
   /**
    * Column index to ensure visible (by forcefully scrolling if necessary)
    */
-  scrollToColumn: _react.PropTypes.number,
+  scrollToColumn: PropTypes.number,
 
   /** Vertical offset. */
-  scrollTop: _react.PropTypes.number,
+  scrollTop: PropTypes.number,
 
   /**
    * Row index to ensure visible (by forcefully scrolling if necessary)
    */
-  scrollToRow: _react.PropTypes.number,
+  scrollToRow: PropTypes.number,
 
   /**
    * Width of Grid; this property determines the number of visible (vs virtualized) columns.
    */
-  width: _react.PropTypes.number.isRequired
+  width: PropTypes.number.isRequired
 };
 Grid.defaultProps = {
   'aria-label': 'grid',

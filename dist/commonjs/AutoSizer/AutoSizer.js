@@ -8,6 +8,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _reactAddonsShallowCompare = require('react-addons-shallow-compare');
@@ -153,16 +155,16 @@ AutoSizer.propTypes = {
    * This function should implement the following signature:
    * ({ height, width }) => PropTypes.element
    */
-  children: _react.PropTypes.func.isRequired,
+  children: PropTypes.func.isRequired,
 
   /** Disable dynamic :height property */
-  disableHeight: _react.PropTypes.bool,
+  disableHeight: PropTypes.bool,
 
   /** Disable dynamic :width property */
-  disableWidth: _react.PropTypes.bool,
+  disableWidth: PropTypes.bool,
 
   /** Callback to be invoked on-resize: ({ height, width }) */
-  onResize: _react.PropTypes.func.isRequired
+  onResize: PropTypes.func.isRequired
 };
 AutoSizer.defaultProps = {
   onResize: function onResize() {}

@@ -10,6 +10,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _CollectionView = require('./CollectionView');
@@ -192,12 +194,12 @@ var Collection = function (_Component) {
 }(_react.Component);
 
 Collection.propTypes = {
-  'aria-label': _react.PropTypes.string,
+  'aria-label': PropTypes.string,
 
   /**
    * Number of cells in Collection.
    */
-  cellCount: _react.PropTypes.number.isRequired,
+  cellCount: PropTypes.number.isRequired,
 
   /**
    * Responsible for rendering a group of cells given their indices.
@@ -207,24 +209,24 @@ Collection.propTypes = {
    *   cellRenderer: Function
    * }): Array<PropTypes.node>
    */
-  cellGroupRenderer: _react.PropTypes.func.isRequired,
+  cellGroupRenderer: PropTypes.func.isRequired,
 
   /**
    * Responsible for rendering a cell given an row and column index.
    * Should implement the following interface: (index: number): PropTypes.node
    */
-  cellRenderer: _react.PropTypes.func.isRequired,
+  cellRenderer: PropTypes.func.isRequired,
 
   /**
    * Callback responsible for returning size and offset/position information for a given cell (index).
    * (index): { height: number, width: number, x: number, y: number }
    */
-  cellSizeAndPositionGetter: _react.PropTypes.func.isRequired,
+  cellSizeAndPositionGetter: PropTypes.func.isRequired,
 
   /**
    * Optionally override the size of the sections a Collection's cells are split into.
    */
-  sectionSize: _react.PropTypes.number
+  sectionSize: PropTypes.number
 };
 Collection.defaultProps = {
   'aria-label': 'grid',

@@ -8,6 +8,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _reactAddonsShallowCompare = require('react-addons-shallow-compare');
 
 var _reactAddonsShallowCompare2 = _interopRequireDefault(_reactAddonsShallowCompare);
@@ -119,18 +121,18 @@ ColumnSizer.propTypes = {
    * The :registerChild should be passed to the Grid's :ref property.
    * The :adjustedWidth property is optional; it reflects the lesser of the overall width or the width of all columns.
    */
-  children: _react.PropTypes.func.isRequired,
+  children: PropTypes.func.isRequired,
 
   /** Optional maximum allowed column width */
-  columnMaxWidth: _react.PropTypes.number,
+  columnMaxWidth: PropTypes.number,
 
   /** Optional minimum allowed column width */
-  columnMinWidth: _react.PropTypes.number,
+  columnMinWidth: PropTypes.number,
 
   /** Number of columns in Grid or FlexTable child */
-  columnsCount: _react.PropTypes.number.isRequired,
+  columnsCount: PropTypes.number.isRequired,
 
   /** Width of Grid or FlexTable child */
-  width: _react.PropTypes.number.isRequired
+  width: PropTypes.number.isRequired
 };
 exports.default = ColumnSizer;

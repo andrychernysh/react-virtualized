@@ -293,10 +293,10 @@
             } ]), ArrowKeyStepper;
         }(_react.Component);
         ArrowKeyStepper.propTypes = {
-            children: _react.PropTypes.func.isRequired,
-            className: _react.PropTypes.string,
-            columnsCount: _react.PropTypes.number.isRequired,
-            rowsCount: _react.PropTypes.number.isRequired
+            children: PropTypes.func.isRequired,
+            className: PropTypes.string,
+            columnsCount: PropTypes.number.isRequired,
+            rowsCount: PropTypes.number.isRequired
         }, exports["default"] = ArrowKeyStepper;
     }, /* 3 */
     /***/
@@ -483,10 +483,10 @@
             } ]), AutoSizer;
         }(_react.Component);
         AutoSizer.propTypes = {
-            children: _react.PropTypes.func.isRequired,
-            disableHeight: _react.PropTypes.bool,
-            disableWidth: _react.PropTypes.bool,
-            onResize: _react.PropTypes.func.isRequired
+            children: PropTypes.func.isRequired,
+            disableHeight: PropTypes.bool,
+            disableWidth: PropTypes.bool,
+            onResize: PropTypes.func.isRequired
         }, AutoSizer.defaultProps = {
             onResize: function() {}
         }, exports["default"] = AutoSizer;
@@ -748,12 +748,12 @@
             } ]), Collection;
         }(_react.Component);
         Collection.propTypes = {
-            "aria-label": _react.PropTypes.string,
-            cellCount: _react.PropTypes.number.isRequired,
-            cellGroupRenderer: _react.PropTypes.func.isRequired,
-            cellRenderer: _react.PropTypes.func.isRequired,
-            cellSizeAndPositionGetter: _react.PropTypes.func.isRequired,
-            sectionSize: _react.PropTypes.number
+            "aria-label": PropTypes.string,
+            cellCount: PropTypes.number.isRequired,
+            cellGroupRenderer: PropTypes.func.isRequired,
+            cellRenderer: PropTypes.func.isRequired,
+            cellSizeAndPositionGetter: PropTypes.func.isRequired,
+            sectionSize: PropTypes.number
         }, Collection.defaultProps = {
             "aria-label": "grid",
             cellGroupRenderer: defaultCellGroupRenderer
@@ -1034,18 +1034,18 @@
             } ]), CollectionView;
         }(_react.Component);
         CollectionView.propTypes = {
-            "aria-label": _react.PropTypes.string,
-            cellCount: _react.PropTypes.number.isRequired,
-            cellLayoutManager: _react.PropTypes.object.isRequired,
-            className: _react.PropTypes.string,
-            height: _react.PropTypes.number.isRequired,
-            noContentRenderer: _react.PropTypes.func.isRequired,
-            onScroll: _react.PropTypes.func.isRequired,
-            onSectionRendered: _react.PropTypes.func.isRequired,
-            scrollLeft: _react.PropTypes.number,
-            scrollToCell: _react.PropTypes.number,
-            scrollTop: _react.PropTypes.number,
-            width: _react.PropTypes.number.isRequired
+            "aria-label": PropTypes.string,
+            cellCount: PropTypes.number.isRequired,
+            cellLayoutManager: PropTypes.object.isRequired,
+            className: PropTypes.string,
+            height: PropTypes.number.isRequired,
+            noContentRenderer: PropTypes.func.isRequired,
+            onScroll: PropTypes.func.isRequired,
+            onSectionRendered: PropTypes.func.isRequired,
+            scrollLeft: PropTypes.number,
+            scrollToCell: PropTypes.number,
+            scrollTop: PropTypes.number,
+            width: PropTypes.number.isRequired
         }, CollectionView.defaultProps = {
             "aria-label": "grid",
             noContentRenderer: function() {
@@ -1516,11 +1516,11 @@
             } ]), ColumnSizer;
         }(_react.Component);
         ColumnSizer.propTypes = {
-            children: _react.PropTypes.func.isRequired,
-            columnMaxWidth: _react.PropTypes.number,
-            columnMinWidth: _react.PropTypes.number,
-            columnsCount: _react.PropTypes.number.isRequired,
-            width: _react.PropTypes.number.isRequired
+            children: PropTypes.func.isRequired,
+            columnMaxWidth: PropTypes.number,
+            columnMinWidth: PropTypes.number,
+            columnsCount: PropTypes.number.isRequired,
+            width: PropTypes.number.isRequired
         }, exports["default"] = ColumnSizer;
     }, /* 26 */
     /***/
@@ -1993,25 +1993,25 @@
             } ]), Grid;
         }(_react.Component);
         Grid.propTypes = {
-            "aria-label": _react.PropTypes.string,
-            className: _react.PropTypes.string,
-            columnsCount: _react.PropTypes.number.isRequired,
-            columnWidth: _react.PropTypes.oneOfType([ _react.PropTypes.number, _react.PropTypes.func ]).isRequired,
-            height: _react.PropTypes.number.isRequired,
-            noContentRenderer: _react.PropTypes.func.isRequired,
-            onScroll: _react.PropTypes.func.isRequired,
-            onSectionRendered: _react.PropTypes.func.isRequired,
-            overscanColumnsCount: _react.PropTypes.number.isRequired,
-            overscanRowsCount: _react.PropTypes.number.isRequired,
-            renderCell: _react.PropTypes.func.isRequired,
-            renderCellRanges: _react.PropTypes.func.isRequired,
-            rowHeight: _react.PropTypes.oneOfType([ _react.PropTypes.number, _react.PropTypes.func ]).isRequired,
-            rowsCount: _react.PropTypes.number.isRequired,
-            scrollLeft: _react.PropTypes.number,
-            scrollToColumn: _react.PropTypes.number,
-            scrollTop: _react.PropTypes.number,
-            scrollToRow: _react.PropTypes.number,
-            width: _react.PropTypes.number.isRequired
+            "aria-label": PropTypes.string,
+            className: PropTypes.string,
+            columnsCount: PropTypes.number.isRequired,
+            columnWidth: PropTypes.oneOfType([ PropTypes.number, PropTypes.func ]).isRequired,
+            height: PropTypes.number.isRequired,
+            noContentRenderer: PropTypes.func.isRequired,
+            onScroll: PropTypes.func.isRequired,
+            onSectionRendered: PropTypes.func.isRequired,
+            overscanColumnsCount: PropTypes.number.isRequired,
+            overscanRowsCount: PropTypes.number.isRequired,
+            renderCell: PropTypes.func.isRequired,
+            renderCellRanges: PropTypes.func.isRequired,
+            rowHeight: PropTypes.oneOfType([ PropTypes.number, PropTypes.func ]).isRequired,
+            rowsCount: PropTypes.number.isRequired,
+            scrollLeft: PropTypes.number,
+            scrollToColumn: PropTypes.number,
+            scrollTop: PropTypes.number,
+            scrollToRow: PropTypes.number,
+            width: PropTypes.number.isRequired
         }, Grid.defaultProps = {
             "aria-label": "grid",
             noContentRenderer: function() {
@@ -2403,31 +2403,31 @@
             } ]), FlexTable;
         }(_react.Component);
         FlexTable.propTypes = {
-            "aria-label": _react.PropTypes.string,
+            "aria-label": PropTypes.string,
             children: function children(props, propName, componentName) {
                 for (var children = _react2["default"].Children.toArray(props.children), i = 0; i < children.length; i++) if (children[i].type !== _FlexColumn2["default"]) return new Error("FlexTable only accepts children of type FlexColumn");
             },
-            className: _react.PropTypes.string,
-            disableHeader: _react.PropTypes.bool,
-            headerClassName: _react.PropTypes.string,
-            headerHeight: _react.PropTypes.number.isRequired,
-            height: _react.PropTypes.number.isRequired,
-            noRowsRenderer: _react.PropTypes.func,
-            onHeaderClick: _react.PropTypes.func,
-            onRowClick: _react.PropTypes.func,
-            onRowsRendered: _react.PropTypes.func,
-            onScroll: _react.PropTypes.func.isRequired,
-            overscanRowsCount: _react.PropTypes.number.isRequired,
-            rowClassName: _react.PropTypes.oneOfType([ _react.PropTypes.string, _react.PropTypes.func ]),
-            rowGetter: _react.PropTypes.func.isRequired,
-            rowHeight: _react.PropTypes.oneOfType([ _react.PropTypes.number, _react.PropTypes.func ]).isRequired,
-            rowsCount: _react.PropTypes.number.isRequired,
-            scrollToIndex: _react.PropTypes.number,
-            scrollTop: _react.PropTypes.number,
-            sort: _react.PropTypes.func,
-            sortBy: _react.PropTypes.string,
-            sortDirection: _react.PropTypes.oneOf([ _SortDirection2["default"].ASC, _SortDirection2["default"].DESC ]),
-            width: _react.PropTypes.number.isRequired
+            className: PropTypes.string,
+            disableHeader: PropTypes.bool,
+            headerClassName: PropTypes.string,
+            headerHeight: PropTypes.number.isRequired,
+            height: PropTypes.number.isRequired,
+            noRowsRenderer: PropTypes.func,
+            onHeaderClick: PropTypes.func,
+            onRowClick: PropTypes.func,
+            onRowsRendered: PropTypes.func,
+            onScroll: PropTypes.func.isRequired,
+            overscanRowsCount: PropTypes.number.isRequired,
+            rowClassName: PropTypes.oneOfType([ PropTypes.string, PropTypes.func ]),
+            rowGetter: PropTypes.func.isRequired,
+            rowHeight: PropTypes.oneOfType([ PropTypes.number, PropTypes.func ]).isRequired,
+            rowsCount: PropTypes.number.isRequired,
+            scrollToIndex: PropTypes.number,
+            scrollTop: PropTypes.number,
+            sort: PropTypes.func,
+            sortBy: PropTypes.string,
+            sortDirection: PropTypes.oneOf([ _SortDirection2["default"].ASC, _SortDirection2["default"].DESC ]),
+            width: PropTypes.number.isRequired
         }, FlexTable.defaultProps = {
             disableHeader: !1,
             headerHeight: 0,
@@ -2522,21 +2522,21 @@
             flexShrink: 1,
             headerRenderer: defaultHeaderRenderer
         }, Column.propTypes = {
-            "aria-label": _react.PropTypes.string,
-            cellClassName: _react.PropTypes.string,
-            cellDataGetter: _react.PropTypes.func,
-            cellRenderer: _react.PropTypes.func,
-            columnData: _react.PropTypes.object,
-            dataKey: _react.PropTypes.any.isRequired,
-            disableSort: _react.PropTypes.bool,
-            flexGrow: _react.PropTypes.number,
-            flexShrink: _react.PropTypes.number,
-            headerClassName: _react.PropTypes.string,
-            headerRenderer: _react.PropTypes.func.isRequired,
-            label: _react.PropTypes.string,
-            maxWidth: _react.PropTypes.number,
-            minWidth: _react.PropTypes.number,
-            width: _react.PropTypes.number.isRequired
+            "aria-label": PropTypes.string,
+            cellClassName: PropTypes.string,
+            cellDataGetter: PropTypes.func,
+            cellRenderer: PropTypes.func,
+            columnData: PropTypes.object,
+            dataKey: PropTypes.any.isRequired,
+            disableSort: PropTypes.bool,
+            flexGrow: PropTypes.number,
+            flexShrink: PropTypes.number,
+            headerClassName: PropTypes.string,
+            headerRenderer: PropTypes.func.isRequired,
+            label: PropTypes.string,
+            maxWidth: PropTypes.number,
+            minWidth: PropTypes.number,
+            width: PropTypes.number.isRequired
         }, exports["default"] = Column;
     }, /* 37 */
     /***/
@@ -2593,7 +2593,7 @@
         var _react = __webpack_require__(3), _classnames = (_interopRequireDefault(_react), 
         __webpack_require__(13)), _classnames2 = _interopRequireDefault(_classnames), _SortDirection = __webpack_require__(38), _SortDirection2 = _interopRequireDefault(_SortDirection);
         SortIndicator.propTypes = {
-            sortDirection: _react.PropTypes.oneOf([ _SortDirection2["default"].ASC, _SortDirection2["default"].DESC ])
+            sortDirection: PropTypes.oneOf([ _SortDirection2["default"].ASC, _SortDirection2["default"].DESC ])
         };
     }, /* 38 */
     /***/
@@ -2743,12 +2743,12 @@
             } ]), InfiniteLoader;
         }(_react.Component);
         InfiniteLoader.propTypes = {
-            children: _react.PropTypes.func.isRequired,
-            isRowLoaded: _react.PropTypes.func.isRequired,
-            loadMoreRows: _react.PropTypes.func.isRequired,
-            minimumBatchSize: _react.PropTypes.number.isRequired,
-            rowsCount: _react.PropTypes.number.isRequired,
-            threshold: _react.PropTypes.number.isRequired
+            children: PropTypes.func.isRequired,
+            isRowLoaded: PropTypes.func.isRequired,
+            loadMoreRows: PropTypes.func.isRequired,
+            minimumBatchSize: PropTypes.number.isRequired,
+            rowsCount: PropTypes.number.isRequired,
+            threshold: PropTypes.number.isRequired
         }, InfiniteLoader.defaultProps = {
             minimumBatchSize: 10,
             rowsCount: 0,
@@ -2858,7 +2858,7 @@
             } ]), ScrollSync;
         }(_react.Component);
         ScrollSync.propTypes = {
-            children: _react.PropTypes.func.isRequired
+            children: PropTypes.func.isRequired
         }, exports["default"] = ScrollSync;
     }, /* 44 */
     /***/
@@ -2975,19 +2975,19 @@
             } ]), VirtualScroll;
         }(_react.Component);
         VirtualScroll.propTypes = {
-            "aria-label": _react.PropTypes.string,
-            className: _react.PropTypes.string,
-            height: _react.PropTypes.number.isRequired,
-            noRowsRenderer: _react.PropTypes.func.isRequired,
-            onRowsRendered: _react.PropTypes.func.isRequired,
-            overscanRowsCount: _react.PropTypes.number.isRequired,
-            onScroll: _react.PropTypes.func.isRequired,
-            rowHeight: _react.PropTypes.oneOfType([ _react.PropTypes.number, _react.PropTypes.func ]).isRequired,
-            rowRenderer: _react.PropTypes.func.isRequired,
-            rowsCount: _react.PropTypes.number.isRequired,
-            scrollToIndex: _react.PropTypes.number,
-            scrollTop: _react.PropTypes.number,
-            width: _react.PropTypes.number.isRequired
+            "aria-label": PropTypes.string,
+            className: PropTypes.string,
+            height: PropTypes.number.isRequired,
+            noRowsRenderer: PropTypes.func.isRequired,
+            onRowsRendered: PropTypes.func.isRequired,
+            overscanRowsCount: PropTypes.number.isRequired,
+            onScroll: PropTypes.func.isRequired,
+            rowHeight: PropTypes.oneOfType([ PropTypes.number, PropTypes.func ]).isRequired,
+            rowRenderer: PropTypes.func.isRequired,
+            rowsCount: PropTypes.number.isRequired,
+            scrollToIndex: PropTypes.number,
+            scrollTop: PropTypes.number,
+            width: PropTypes.number.isRequired
         }, VirtualScroll.defaultProps = {
             noRowsRenderer: function() {
                 return null;

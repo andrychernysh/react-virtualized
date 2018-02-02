@@ -7,6 +7,8 @@ exports.default = SortIndicator;
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _classnames = require('classnames');
@@ -44,5 +46,5 @@ function SortIndicator(_ref) {
   );
 }
 SortIndicator.propTypes = {
-  sortDirection: _react.PropTypes.oneOf([_SortDirection2.default.ASC, _SortDirection2.default.DESC])
+  sortDirection: PropTypes.oneOf([_SortDirection2.default.ASC, _SortDirection2.default.DESC])
 };

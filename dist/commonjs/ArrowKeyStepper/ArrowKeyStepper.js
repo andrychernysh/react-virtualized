@@ -8,6 +8,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _reactAddonsShallowCompare = require('react-addons-shallow-compare');
@@ -134,9 +136,9 @@ var ArrowKeyStepper = function (_Component) {
 }(_react.Component);
 
 ArrowKeyStepper.propTypes = {
-  children: _react.PropTypes.func.isRequired,
-  className: _react.PropTypes.string,
-  columnsCount: _react.PropTypes.number.isRequired,
-  rowsCount: _react.PropTypes.number.isRequired
+  children: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  columnsCount: PropTypes.number.isRequired,
+  rowsCount: PropTypes.number.isRequired
 };
 exports.default = ArrowKeyStepper;

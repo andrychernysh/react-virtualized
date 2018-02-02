@@ -18,6 +18,8 @@ var _FlexColumn2 = _interopRequireDefault(_FlexColumn);
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
@@ -389,7 +391,7 @@ var FlexTable = function (_Component) {
 }(_react.Component);
 
 FlexTable.propTypes = {
-  'aria-label': _react.PropTypes.string,
+  'aria-label': PropTypes.string,
 
   /** One or more FlexColumns describing the data displayed in this row */
   children: function children(props, propName, componentName) {
@@ -402,96 +404,96 @@ FlexTable.propTypes = {
   },
 
   /** Optional CSS class name */
-  className: _react.PropTypes.string,
+  className: PropTypes.string,
 
   /** Disable rendering the header at all */
-  disableHeader: _react.PropTypes.bool,
+  disableHeader: PropTypes.bool,
 
   /** Optional CSS class to apply to all column headers */
-  headerClassName: _react.PropTypes.string,
+  headerClassName: PropTypes.string,
 
   /** Fixed height of header row */
-  headerHeight: _react.PropTypes.number.isRequired,
+  headerHeight: PropTypes.number.isRequired,
 
   /** Fixed/available height for out DOM element */
-  height: _react.PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
 
   /** Optional renderer to be used in place of table body rows when rowsCount is 0 */
-  noRowsRenderer: _react.PropTypes.func,
+  noRowsRenderer: PropTypes.func,
 
   /**
   * Optional callback when a column's header is clicked.
   * (dataKey: string): void
   */
-  onHeaderClick: _react.PropTypes.func,
+  onHeaderClick: PropTypes.func,
 
   /**
    * Callback invoked when a user clicks on a table row.
    * (rowIndex: number): void
    */
-  onRowClick: _react.PropTypes.func,
+  onRowClick: PropTypes.func,
 
   /**
    * Callback invoked with information about the slice of rows that were just rendered.
    * ({ startIndex, stopIndex }): void
    */
-  onRowsRendered: _react.PropTypes.func,
+  onRowsRendered: PropTypes.func,
 
   /**
    * Callback invoked whenever the scroll offset changes within the inner scrollable region.
    * This callback can be used to sync scrolling between lists, tables, or grids.
    * ({ clientHeight, scrollHeight, scrollTop }): void
    */
-  onScroll: _react.PropTypes.func.isRequired,
+  onScroll: PropTypes.func.isRequired,
 
   /**
    * Number of rows to render above/below the visible bounds of the list.
    * These rows can help for smoother scrolling on touch devices.
    */
-  overscanRowsCount: _react.PropTypes.number.isRequired,
+  overscanRowsCount: PropTypes.number.isRequired,
 
   /**
    * Optional CSS class to apply to all table rows (including the header row).
    * This property can be a CSS class name (string) or a function that returns a class name.
    * If a function is provided its signature should be: (rowIndex: number): string
    */
-  rowClassName: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.func]),
+  rowClassName: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
 
   /**
    * Callback responsible for returning a data row given an index.
    * (index: number): any
    */
-  rowGetter: _react.PropTypes.func.isRequired,
+  rowGetter: PropTypes.func.isRequired,
 
   /**
    * Either a fixed row height (number) or a function that returns the height of a row given its index.
    * (index: number): number
    */
-  rowHeight: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.func]).isRequired,
+  rowHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.func]).isRequired,
 
   /** Number of rows in table. */
-  rowsCount: _react.PropTypes.number.isRequired,
+  rowsCount: PropTypes.number.isRequired,
 
   /** Row index to ensure visible (by forcefully scrolling if necessary) */
-  scrollToIndex: _react.PropTypes.number,
+  scrollToIndex: PropTypes.number,
 
   /** Vertical offset. */
-  scrollTop: _react.PropTypes.number,
+  scrollTop: PropTypes.number,
 
   /**
    * Sort function to be called if a sortable header is clicked.
    * (dataKey: string, sortDirection: SortDirection): void
    */
-  sort: _react.PropTypes.func,
+  sort: PropTypes.func,
 
   /** FlexTable data is currently sorted by this :dataKey (if it is sorted at all) */
-  sortBy: _react.PropTypes.string,
+  sortBy: PropTypes.string,
 
   /** FlexTable data is currently sorted in this direction (if it is sorted at all) */
-  sortDirection: _react.PropTypes.oneOf([_SortDirection2.default.ASC, _SortDirection2.default.DESC]),
+  sortDirection: PropTypes.oneOf([_SortDirection2.default.ASC, _SortDirection2.default.DESC]),
 
   /** Width of list */
-  width: _react.PropTypes.number.isRequired
+  width: PropTypes.number.isRequired
 };
 FlexTable.defaultProps = {
   disableHeader: false,

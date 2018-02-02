@@ -9,6 +9,8 @@ exports.defaultHeaderRenderer = defaultHeaderRenderer;
 
 var _react = require('react');
 
+var PropTypes = require('prop-types');
+
 var _react2 = _interopRequireDefault(_react);
 
 var _SortIndicator = require('./SortIndicator');
@@ -105,57 +107,57 @@ Column.defaultProps = {
 };
 Column.propTypes = {
   /** Optional aria-label value to set on the column header */
-  'aria-label': _react.PropTypes.string,
+  'aria-label': PropTypes.string,
 
   /** Optional CSS class to apply to cell */
-  cellClassName: _react.PropTypes.string,
+  cellClassName: PropTypes.string,
 
   /**
    * Callback responsible for returning a cell's data, given its :dataKey
    * (dataKey: string, rowData: any): any
    */
-  cellDataGetter: _react.PropTypes.func,
+  cellDataGetter: PropTypes.func,
 
   /**
    * Callback responsible for rendering a cell's contents.
    * (cellData: any, cellDataKey: string, rowData: any, rowIndex: number, columnData: any): element
    */
-  cellRenderer: _react.PropTypes.func,
+  cellRenderer: PropTypes.func,
 
   /** Optional additional data passed to this column's :cellDataGetter */
-  columnData: _react.PropTypes.object,
+  columnData: PropTypes.object,
 
   /** Uniquely identifies the row-data attribute correspnding to this cell */
-  dataKey: _react.PropTypes.any.isRequired,
+  dataKey: PropTypes.any.isRequired,
 
   /** If sort is enabled for the table at large, disable it for this column */
-  disableSort: _react.PropTypes.bool,
+  disableSort: PropTypes.bool,
 
   /** Flex grow style; defaults to 0 */
-  flexGrow: _react.PropTypes.number,
+  flexGrow: PropTypes.number,
 
   /** Flex shrink style; defaults to 1 */
-  flexShrink: _react.PropTypes.number,
+  flexShrink: PropTypes.number,
 
   /** Optional CSS class to apply to this column's header */
-  headerClassName: _react.PropTypes.string,
+  headerClassName: PropTypes.string,
 
   /**
    * Optional callback responsible for rendering a column header contents.
    * ({ columnData: object, dataKey: string, disableSort: boolean, label: string, sortBy: string, sortDirection: string }): PropTypes.node
    */
-  headerRenderer: _react.PropTypes.func.isRequired,
+  headerRenderer: PropTypes.func.isRequired,
 
   /** Header label for this column */
-  label: _react.PropTypes.string,
+  label: PropTypes.string,
 
   /** Maximum width of column; this property will only be used if :flexGrow is > 0. */
-  maxWidth: _react.PropTypes.number,
+  maxWidth: PropTypes.number,
 
   /** Minimum width of column. */
-  minWidth: _react.PropTypes.number,
+  minWidth: PropTypes.number,
 
   /** Flex basis (width) for this column; This value can grow or shrink based on :flexGrow and :flexShrink properties. */
-  width: _react.PropTypes.number.isRequired
+  width: PropTypes.number.isRequired
 };
 exports.default = Column;
